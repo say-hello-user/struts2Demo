@@ -1,0 +1,2 @@
+# struts2Demo
+Java Struts2框架与mysql数据库实现商品和商品类别的增删改查操作
