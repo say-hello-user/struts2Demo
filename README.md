@@ -63,10 +63,10 @@ INSERT INTO `supermarket` VALUES (17,'铅笔',200,1,'1','a|c|','in');
 ```
 
 ### 插入商品类别截图 
-![image] (https://github.com/say-hello-user/struts2Demo/blob/master/image/type_add.png)
+![image] ("https://github.com/say-hello-user/struts2Demo/blob/master/image/type_add.png")
 ### 获取商品类别截图 
-![image] (https://github.com/say-hello-user/struts2Demo/blob/master/image/getType.png)
+![image] ("https://github.com/say-hello-user/struts2Demo/blob/master/image/getType.png")
 ### 插入商品截图 
-![image] (https://github.com/say-hello-user/struts2Demo/blob/master/image/addMarket.png)
+![image] ("https://github.com/say-hello-user/struts2Demo/blob/master/image/addMarket.png")
 ### 获取商品截图 
-![image] (https://github.com/say-hello-user/struts2Demo/blob/master/image/getMarket.png)
+![image] ("https://github.com/say-hello-user/struts2Demo/blob/master/image/getMarket.png")
