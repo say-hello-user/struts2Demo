@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<constant name="struts.i18n.encoding" value="UTF-8" />  
+<package name="default" namespace="/" extends="struts-default">
+    <interceptors>
+    		<interceptor-stack name="myStack">
+    			<interceptor-ref name="paramsPrepareParamsStack">
+    				<param name="prepare.alwaysInvokePrepare">false</param>
+    			</interceptor-ref>
+    		</interceptor-stack>
+    </interceptors>
+    
+    <default-interceptor-ref name="myStack" ></default-interceptor-ref>
+    
+    <action name="type-*" class="com.app.action.superTypeAction" method="{1}">
+    		<result name="addTypePage">/WEB-INF/view/type-add.jsp</result>
+    		<result name="getAllTypePage">/WEB-INF/view/type-getAll.jsp</result>
+    		<result name="add">/WEB-INF/view/success.jsp</result>
+    		<result name="deleteType">/WEB-INF/view/success.jsp</result>
+    		<result name="getmodifyType">/WEB-INF/view/type-modify.jsp</result>
+    		<result name="modifyType">/WEB-INF/view/success.jsp</result>
+  	</action>
+  	
+  	  <action name="supermarket-*" class="com.app.action.superMarketAction" method="{1}">
+    		<result name="addSuperMarketPage">/WEB-INF/view/supermarket-add.jsp</result>
+    		<result name="add">/WEB-INF/view/success.jsp</result>
+    		<result name="getAllSuperMarketPage">/WEB-INF/view/supermarket-getAll.jsp</result>
+    		<result name="deleteSuperMarket">/WEB-INF/view/success.jsp</result>
+    		<result name="getmodifySuperMarket">/WEB-INF/view/supermarket-modify.jsp</result>
+    		<result name="modifySuperMarket">/WEB-INF/view/success.jsp</result>
+  	</action>
+  	
+  		
+ </package>   
+</struts>    
