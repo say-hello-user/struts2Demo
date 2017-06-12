@@ -16,14 +16,14 @@ public class jdbcutil {
     private static Properties p=new Properties();
     static{
         try {
-            FileInputStream fis=new FileInputStream("E:\\myeclipsework2\\supermarket\\src\\com\\app\\server\\db.properties");
-            p.load(fis);
+           InputStream in = jdbcutil.class.getResourceAsStream("/db.properties");
+            p.load(in);
             DRIVER_CLASS=p.getProperty("driver");
             URL=p.getProperty("url");
             USERRNAME=p.getProperty("user");
             PASSWORD=p.getProperty("pass");
             Class.forName(DRIVER_CLASS);
-            fis.close();
+            in.close();
         } catch (IOException e) {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
